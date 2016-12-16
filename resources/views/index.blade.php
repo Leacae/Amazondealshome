@@ -70,9 +70,14 @@
                 <div class="col-lg-6 col-md-7 col-sm-6">
                     <div class="slogan">
                         <h2 class="wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.5s">GET FREE</h2>
-                        <h3 class="wow fadeInLeft" data-wow-delay="0.9s" data-wow-duration="0.5s">AmazonBasics Lightning Cable</h3>
+                        <h3 class="wow fadeInLeft" data-wow-delay="0.9s" data-wow-duration="0.5s">AmazonBasics
+                            Lightning Cable
+                        </h3>
+                        <br />
+                        <a href="" class="buy-now">Buy Now</a>
                         <p class="wow fadeInRight" data-wow-delay="1.2s">
-                            Buy AmazonBasics Lightning Cable (6-Feet), Get $8 Amazon gift card!<br/>
+                            <a href="#" class="link-write">Buy AmazonBasics Lightning Cable (6-Feet)</a>, Get $8 Amazon gift card!<br/>
+                            <br/>
                             *The Lightning cable should be purchased after 2016/12/15, Only for the 6 Feet, White one.<br/>
                             *Limit 500 gift card per day<br/>
                             *Expires at 9 am PDT 20th December 2016
@@ -81,20 +86,23 @@
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 col-md-5 col-sm-6">
                     <form role="form" id="register_form">
-                        <div class="title wow flipInX" data-wow-duration="0.6s"> Register now </div>
+                        <div class="title wow flipInX" data-wow-duration="0.6s">GET FREE CABLE NOW </div>
                         <div class="form-group">
-                            <input type="text" class="form-control wow flipInX" data-wow-delay="0.8s" data-wow-duration="0.2s" id="name" placeholder="Full name" name="name">
+                            <input type="text" class="form-control wow flipInX" data-wow-delay="0.8s" data-wow-duration="0.2s" id="name" placeholder="Name" name="name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control wow flipInX" data-wow-delay="1s" data-wow-duration="0.2s" id="email" placeholder="Email Address" name="email">
+                            <input type="email" class="form-control wow flipInX" data-wow-delay="1s" data-wow-duration="0.2s" id="email" placeholder="Email" name="email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control wow flipInX" data-wow-delay="1.2s" data-wow-duration="0.2s" id="username" placeholder="Username" name="username">
+                            <input type="text" class="form-control wow flipInX" data-wow-delay="1.2s" data-wow-duration="0.2s" id="username" placeholder="Amazon Order Id">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control wow flipInX" data-wow-delay="1.4s" data-wow-duration="0.2s" id="password" placeholder="Password" name="password">
+                            <input type="password" class="form-control wow flipInX" data-wow-delay="1.4s" data-wow-duration="0.2s" id="password" placeholder="Order Date">
                         </div>
-                        <button type="submit" class="btn btn_start wow flipInX" data-wow-delay="1.6s" data-wow-duration="0.2s">Start</button>
+                        <div class="form-group">
+                            <input type="password" class="form-control wow flipInX" data-wow-delay="1.4s" data-wow-duration="0.2s" id="password" placeholder="Order Screenshot" >
+                        </div>
+                        <button type="submit" class="btn btn_start wow flipInX" data-wow-delay="1.6s" data-wow-duration="0.2s">Submit</button>
                     </form>
                 </div>
             </div>
@@ -110,8 +118,8 @@
                 <div class="col-md-4">
                     <h4>Contact us</h4>
                     <ul class="contact_data_list">
-                        <li><i class="icon-call-in"></i> (234) 789-4356, (234) 789-4357</li>
                         <li><i class="icon-envelope"></i> support@amazondealshome.com</li>
+                        <li><i class="icon-envelope"></i> deals@amazondealshome.com</li>
                     </ul>
                 </div>
                 <div class="col-md-5">
@@ -124,19 +132,19 @@
                             </div>
                         </div>
                     </form>
-                    <p>Subscribe to our newsletter, actions and updates</p>
+                    <p>Never miss our new deals and offers</p>
                 </div>
                 <div class="col-md-3">
                     <h4>Follow us</h4>
                     <ul class="soc_nav">
                         <li>
-                            <a href="#" class="icon-soc-googleplus"></a>
+                            <a href="javascript:void(0);" class="icon-soc-googleplus"></a>
                         </li>
                         <li>
-                            <a href="#" class="icon-soc-facebook"></a>
+                            <a href="javascript:void(0);" class="icon-soc-facebook"></a>
                         </li>
                         <li>
-                            <a href="#" class="icon-soc-twitter"></a>
+                            <a href="javascript:void(0);" class="icon-soc-twitter"></a>
                         </li>
                     </ul>
                 </div>
@@ -149,8 +157,7 @@
     <!-- FOOTER BEGIN -->
     <footer id="footer">
         <div class="container">
-            <!--<a href="#" class="logo"> <img src="./images/logo_dark.png" alt="Best start for your business" height="40" width="45" /> </a>-->
-            <p>&copy; 2016 POINTER <br> Designed by Amazondealshome.com</p>
+            <p>&copy; 2016 <br>Amazondealshome.com</p>
         </div>
     </footer>
     <!-- FOOTER END -->

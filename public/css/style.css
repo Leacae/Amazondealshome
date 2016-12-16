@@ -929,3 +929,13 @@ footer .logo img { content: url("../images/logo_dark@2x.png"); }
 	background-size:20px 20px;
 }
 }
+.slogan .buy-now{
+	display: inline-block;
+	padding: 10px 20px;
+	color: white;
+	background-color: #2ca02c;
+}
+.slogan .link-write{
+	color: white;
+	text-decoration: underline;
+}
