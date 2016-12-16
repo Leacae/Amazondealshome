@@ -6,9 +6,9 @@
 
     <!-- Html Page Specific -->
     <meta charset="utf-8">
-    <title>Pointer - Startup Landing Page</title>
-    <meta name="description" content="Startup landing page">
-    <meta name="author" content="Multifour | multifour.com">
+    <title>Amazondealshome</title>
+    <meta name="description" content="Amazondealshome Startup landing page">
+    <meta name="author" content="Amazondealshome |amazondealshome.com">
 
     <!-- Mobile Specific -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
@@ -69,9 +69,14 @@
             <div class="row">
                 <div class="col-lg-6 col-md-7 col-sm-6">
                     <div class="slogan">
-                        <h2 class="wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.5s">Best start</h2>
-                        <h3 class="wow fadeInLeft" data-wow-delay="0.9s" data-wow-duration="0.5s">for your business</h3>
-                        <p class="wow fadeInRight" data-wow-delay="1.2s">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+                        <h2 class="wow fadeInRight" data-wow-delay="0.6s" data-wow-duration="0.5s">GET FREE</h2>
+                        <h3 class="wow fadeInLeft" data-wow-delay="0.9s" data-wow-duration="0.5s">AmazonBasics Lightning Cable</h3>
+                        <p class="wow fadeInRight" data-wow-delay="1.2s">
+                            Buy AmazonBasics Lightning Cable (6-Feet), Get $8 Amazon gift card!<br/>
+                            *The Lightning cable should be purchased after 2016/12/15, Only for the 6 Feet, White one.<br/>
+                            *Limit 500 gift card per day<br/>
+                            *Expires at 9 am PDT 20th December 2016
+                        </p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 col-md-5 col-sm-6">
@@ -106,8 +111,7 @@
                     <h4>Contact us</h4>
                     <ul class="contact_data_list">
                         <li><i class="icon-call-in"></i> (234) 789-4356, (234) 789-4357</li>
-                        <li><i class="icon-pointer"></i> Address, Postal code, City, Country</li>
-                        <li><i class="icon-envelope"></i> your@email.com</li>
+                        <li><i class="icon-envelope"></i> support@amazondealshome.com</li>
                     </ul>
                 </div>
                 <div class="col-md-5">
@@ -146,7 +150,7 @@
     <footer id="footer">
         <div class="container">
             <!--<a href="#" class="logo"> <img src="./images/logo_dark.png" alt="Best start for your business" height="40" width="45" /> </a>-->
-            <p>&copy; 2014 POINTER <br> Designed by Multifour.com</p>
+            <p>&copy; 2016 POINTER <br> Designed by Amazondealshome.com</p>
         </div>
     </footer>
     <!-- FOOTER END -->
