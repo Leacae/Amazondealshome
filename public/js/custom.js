@@ -99,19 +99,18 @@ $(document).ready(function(){
             $.ajax({
                 url: action,
                 type: 'POST',
-                data: {
-                    newsletter_email: $('#subscribe_email').val()
-                },
+                data: $(this).serialize(),
                 success: function(data) {
                     $('#subscribe_submit').button('reset');
-					
-					//Use labels to display messages
-                    //$('.error').html('Well done! You are subscribed!');
-					
-					//Use modal popups to display messages
-					$('#modalSubscribe .modal-title').html('<i class="icon-envelope-letter"></i>Well done!<br>You are subscribed!');
-					$('#modalSubscribe').modal('show');
-					
+					if(data.state){
+                        $('#modalSubscribe .modal-title').html('<i class="icon-envelope-letter"></i>Well done!<br>You are subscribed!');
+                        $('#modalSubscribe').modal('show');
+                    }else{
+                        $('#subscribe_form').append(
+                            '<label for="subscribe_email" generated="true" class="error" style="display: block;">'+data.info+'</label>'
+                        );
+                    }
+
                 },
                 error: function() {
                     $('#subscribe_submit').button('reset');
@@ -136,7 +135,7 @@ $(document).ready(function(){
 //------------------------------------------------------------------------------------
 //						REGISTRATION FORM VALIDATION'S SETTINGS
 //------------------------------------------------------------------------------------		  
-    $('#register_form').validate({
+    $('#activity_form').validate({
         onfocusout: false,
         onkeyup: false,
         rules: {
@@ -145,28 +144,19 @@ $(document).ready(function(){
                 required: true,
                 email: true
             },
-			username: "required",
-			password: {
-     			required: true,
-      			minlength: 4
-    		}
+            order_id: "required",
+            order_date: 'required',
         },
         errorPlacement: function(error, element) {
             error.insertAfter(element);
         },
         messages: {
-            name: "What's your name?",
             email: {
                 required: "What's your email?",
                 email: "Please, enter a valid email"
             },
-			username: "What's your username?",
-			password: {
-      			required: "What's your password?",
-      			minlength: jQuery.format("At least {0} characters")
-    		}
         },
-					
+
         highlight: function(element) {
             $(element)
             .text('').addClass('error')
@@ -176,6 +166,53 @@ $(document).ready(function(){
             element
             .text('').addClass('valid')
         }
-    }); 
-	
+    });
+
+    //------------------------------------------------------------------------------------
+    //						REGISTRATION FORM SUBMIT SETTINGS
+    //------------------------------------------------------------------------------------
+    $('#activity_form').submit(function() {
+
+        if($(this).valid()){
+            $('#activity_submit').button('Submit...');
+            var action = $(this).attr('action');
+            $.ajax({
+                url: action,
+                type: 'POST',
+                data: $(this).serialize(),
+                success: function(data) {
+
+                },
+                error: function() {
+
+                }
+            });
+        }
+        return false;
+    });
+    //------------------------------------------------------------------------------------
+    //						Image Upload Init
+    //------------------------------------------------------------------------------------
+    var uploader = WebUploader.create({
+        auto: true,
+
+        server: '/upload',
+
+        pick: '#order-screenshot',
+
+        accept: {
+            title: 'Images',
+            extensions: 'gif,jpg,jpeg,bmp,png',
+            mimeTypes: 'image/*'
+        }
+    });
+    uploader.on( 'uploadProgress', function( file, percentage ) {
+
+    });
+    uploader.on( 'uploadSuccess', function( file ) {
+
+    });
+    uploader.on( 'uploadError', function( file ) {
+
+    });
 });

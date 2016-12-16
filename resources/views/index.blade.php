@@ -85,24 +85,30 @@
                     </div>
                 </div>
                 <div class="col-lg-4 col-lg-offset-2 col-md-5 col-sm-6">
-                    <form role="form" id="register_form">
-                        <div class="title wow flipInX" data-wow-duration="0.6s">GET FREE CABLE NOW </div>
+                    <form role="form" action="{{url('activity')}}" id="activity_form" method="post">
+                        <div class="title wow flipInX" data-wow-duration="0.6s">GET FREE TABLE NOW </div>
+                        {{csrf_field()}}
                         <div class="form-group">
-                            <input type="text" class="form-control wow flipInX" data-wow-delay="0.8s" data-wow-duration="0.2s" id="name" placeholder="Name" name="name">
+                            <input type="text" class="form-control wow flipInX" data-wow-delay="0.8s" data-wow-duration="0.2s"  autocomplete="off" name="name" placeholder="Name">
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control wow flipInX" data-wow-delay="1s" data-wow-duration="0.2s" id="email" placeholder="Email" name="email">
+                            <input type="email" class="form-control wow flipInX" data-wow-delay="1s" data-wow-duration="0.2s" autocomplete="off" name="email" placeholder="Email">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control wow flipInX" data-wow-delay="1.2s" data-wow-duration="0.2s" id="username" placeholder="Amazon Order Id">
+                            <input type="text" class="form-control wow flipInX" data-wow-delay="1.2s" data-wow-duration="0.2s" autocomplete="off" name="order_id" placeholder="Amazon Order Id">
                         </div>
                         <div class="form-group">
-                            <input type="password" class="form-control wow flipInX" data-wow-delay="1.4s" data-wow-duration="0.2s" id="password" placeholder="Order Date">
+                            <input type="text" class="form-control wow flipInX" data-wow-delay="1.4s" data-wow-duration="0.2s" autocomplete="off" name="order_date" placeholder="Order Date">
                         </div>
+                        {{--<div class="form-group">
+                            <input type="file" class="form-control wow flipInX" data-wow-delay="1.4s" data-wow-duration="0.2s" autocomplete="off" name="order_screenshot" placeholder="Order Screenshot" >
+                        </div>--}}
                         <div class="form-group">
-                            <input type="password" class="form-control wow flipInX" data-wow-delay="1.4s" data-wow-duration="0.2s" id="password" placeholder="Order Screenshot" >
+                            <div class="form-control wow flipInX animated" data-wow-delay="1.4s"  data-wow-duration="0.2s" id="order-screenshot">
+                                <i class="icon-cloud-upload"></i> Order Screenshot
+                            </div>
                         </div>
-                        <button type="submit" class="btn btn_start wow flipInX" data-wow-delay="1.6s" data-wow-duration="0.2s">Submit</button>
+                        <button id="activity_submit" type="submit" class="btn btn_start wow flipInX" data-wow-delay="1.6s" data-wow-duration="0.2s">Submit</button>
                     </form>
                 </div>
             </div>
@@ -124,8 +130,9 @@
                 </div>
                 <div class="col-md-5">
                     <h4>Subscribe</h4>
-                    <form action="scripts/subscribe.php" method="post" id="subscribe_form" novalidate="novalidate">
+                    <form action="{{url('subscribe')}}" method="post" id="subscribe_form" novalidate="novalidate">
                         <div class="input-group">
+                            {{csrf_field()}}
                             <input class="form-control" type="email" name="email" id="subscribe_email" placeholder="Enter your email here">
                             <div class="input-group-btn">
                                 <button class="btn" type="submit" id="subscribe_submit"><i class="icon-envelope"></i></button>
@@ -187,6 +194,7 @@
 <script src="js/jquery.stellar.min.js"></script>
 <script src="js/jquery.superslides.min.js"></script>
 <script src="js/placeholders.jquery.min.js"></script>
+<script src="js/webuploader.min.js"></script>
 <script src="js/custom.js"></script>
 
 <!--[if lte IE 9]>

@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('index');
 });
+Route::post('activity',"HomeController@activity");
+
+Route::post('upload',"HomeController@upload");
+
+Route::post('subscribe',"HomeController@subscribe");
