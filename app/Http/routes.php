@@ -18,3 +18,9 @@ Route::post('activity',"HomeController@activity");
 Route::post('upload',"HomeController@upload");
 
 Route::post('subscribe',"HomeController@subscribe");
+
+/*...*/
+
+Route::group(['prefix' => 'dashboard','namespace'=>'Backend'],function (){
+    Route::match(['get','post'],'/','HomeController@index');
+});

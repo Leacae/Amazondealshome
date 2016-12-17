@@ -249,7 +249,6 @@ $(document).ready(function(){
 
     flatpickr("#flatpickr", {
         utc: true,
-
         enableTime: false,
     });
 });
