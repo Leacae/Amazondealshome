@@ -136,7 +136,7 @@
                     <form action="{{url('subscribe')}}" method="post" id="subscribe_form" novalidate="novalidate">
                         <div class="input-group">
                             {{csrf_field()}}
-                            <input class="form-control" type="email" name="email" id="subscribe_email" placeholder="Enter your email here">
+                            <input class="form-control" type="email" name="email" id="subscribe_email" autocomplete="off" placeholder="Enter your email here">
                             <div class="input-group-btn">
                                 <button class="btn" type="submit" id="subscribe_submit"><i class="icon-envelope"></i></button>
                             </div>
