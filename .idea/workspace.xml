@@ -27,11 +27,11 @@
       <file leaf-file-name="custom.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/js/custom.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="216" column="55" selection-start-line="216" selection-start-column="55" selection-end-line="216" selection-end-column="55" />
+            <state relative-caret-position="404">
+              <caret line="216" column="75" selection-start-line="216" selection-start-column="75" selection-end-line="216" selection-end-column="75" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <marker date="1481952845175" expanded="true" signature="3395:3410" ph="..." />
+                <marker date="1481953096095" expanded="true" signature="3395:3410" ph="..." />
               </folding>
             </state>
           </provider>
@@ -238,7 +238,7 @@
       <updated>1481879642167</updated>
       <workItem from="1481879643750" duration="856000" />
       <workItem from="1481880502784" duration="13693000" />
-      <workItem from="1481939545180" duration="9292000" />
+      <workItem from="1481939545180" duration="9452000" />
     </task>
     <task id="LOCAL-00001" summary="Amazondealshome Project">
       <created>1481880553773</created>
@@ -338,18 +338,25 @@
       <option name="project" value="LOCAL" />
       <updated>1481947050603</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Amazondealshome Project">
+      <created>1481952946151</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1481952946151</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23841000" />
+    <option name="totallyTimeSpent" value="24001000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12153518" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12153518" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -424,7 +431,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1481952845175" expanded="true" signature="3395:3410" ph="..." />
+            <marker date="1481953096095" expanded="true" signature="3395:3410" ph="..." />
           </folding>
         </state>
       </provider>
@@ -603,11 +610,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/js/custom.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="216" column="55" selection-start-line="216" selection-start-column="55" selection-end-line="216" selection-end-column="55" />
+        <state relative-caret-position="404">
+          <caret line="216" column="75" selection-start-line="216" selection-start-column="75" selection-end-line="216" selection-end-column="75" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <marker date="1481952845175" expanded="true" signature="3395:3410" ph="..." />
+            <marker date="1481953096095" expanded="true" signature="3395:3410" ph="..." />
           </folding>
         </state>
       </provider>

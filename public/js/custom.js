@@ -214,7 +214,7 @@ $(document).ready(function(){
         accept: {
             title: 'Images',
             extensions: 'gif,jpg,jpeg,bmp,png',
-            mimeTypes: 'image/jpg,image/jpeg,image/png'
+            mimeTypes: 'image/gif,image/jpg,image/jpeg,image/bmp,image/png'
         }
     });
     uploader.on( 'uploadProgress', function( file, percentage ) {
