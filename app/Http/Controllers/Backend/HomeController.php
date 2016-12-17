@@ -21,7 +21,6 @@ class HomeController extends Controller
         if(!empty($keyword)){
             $activitys->appends(['keyword' => $keyword]);
         }
-        dump($activitys);
         return view('backend.activity',[
             'activitys'=>$activitys,
             'keyword'=>$keyword
