@@ -6,8 +6,8 @@
 
     <!-- Html Page Specific -->
     <meta charset="utf-8">
-    <title>Amazondealshome</title>
-    <meta name="description" content="Amazondealshome Startup landing page">
+    <title>Amazon Deals</title>
+    <meta name="description" content="Amazondealshome Startup  page">
     <meta name="author" content="Amazondealshome |amazondealshome.com">
 
     <!-- Mobile Specific -->
