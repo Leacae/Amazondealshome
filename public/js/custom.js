@@ -214,11 +214,11 @@ $(document).ready(function(){
         accept: {
             title: 'Images',
             extensions: 'gif,jpg,jpeg,bmp,png',
-            mimeTypes: 'image/*'
+            mimeTypes: 'image/jpg,image/jpeg,image/png'
         }
     });
     uploader.on( 'uploadProgress', function( file, percentage ) {
-        $('.screenshot .text').text('Uploading');
+        $('.screenshot .text').text('Uploading...');
     });
     uploader.on( 'uploadSuccess', function( file,data) {
         if(data.state){
