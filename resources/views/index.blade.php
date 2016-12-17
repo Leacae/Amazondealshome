@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
 
     <!--[if lt IE 9]>
-    <script type="text/javascript" src="scripts/html5shiv.js"></script>
+    <script type="text/javascript" src="js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- CSS -->
