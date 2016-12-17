@@ -246,4 +246,10 @@ $(document).ready(function(){
         $('#modalActivity .modal-title').html('<i class="icon-ban"></i>Oops!<br>Please subscribe and we will keep you updated!');
         $('#modalActivity').modal('show');
     });
+
+    flatpickr("#flatpickr", {
+        utc: true,
+
+        enableTime: false,
+    });
 });

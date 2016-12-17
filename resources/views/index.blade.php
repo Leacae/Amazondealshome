@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/simple-line-icons.css" />
     <link rel="stylesheet" href="css/soc-icons.css" />
+    <link rel="stylesheet" href="css/flatpickr.min.css" />
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Favicons -->
@@ -98,7 +99,7 @@
                             <input type="text" class="form-control wow flipInX" data-wow-delay="1.2s" data-wow-duration="0.2s" autocomplete="off" name="order_id" placeholder="Amazon Order Id">
                         </div>
                         <div class="form-group">
-                            <input type="text" class="form-control wow flipInX" data-wow-delay="1.4s" data-wow-duration="0.2s" autocomplete="off" name="order_date" placeholder="Order Date">
+                            <input type="text" id="flatpickr" class="form-control wow flipInX" data-wow-delay="1.4s" data-wow-duration="0.2s" autocomplete="off" name="order_date" placeholder="Order Date">
                         </div>
                         <div class="form-group screenshot">
                             <input type="hidden" name="order_screenshot" value="">
@@ -207,6 +208,7 @@
 <script src="js/jquery.superslides.min.js"></script>
 <script src="js/placeholders.jquery.min.js"></script>
 <script src="js/webuploader.js"></script>
+<script src="js/flatpickr.min.js"></script>
 <script src="js/custom.js"></script>
 
 <!--[if lte IE 9]>
