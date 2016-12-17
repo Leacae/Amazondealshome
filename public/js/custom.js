@@ -90,8 +90,8 @@ $(document).ready(function(){
 //						SUBSCRIBE FORM MAILCHIMP INTEGRATIONS SCRIPT
 //------------------------------------------------------------------------------------		
     $('#subscribe_form').submit(function() {
-        $('.error').hide();
-        $('.error').fadeIn();
+        $(this).find('.error').hide();
+        $(this).find('.error').fadeIn();
         // submit the form
         if($(this).valid()){
             $('#subscribe_submit').button('loading'); 
