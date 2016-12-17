@@ -206,7 +206,10 @@ $(document).ready(function(){
 
         server: '/upload',
 
-        pick: '#order-screenshot',
+        pick: {
+            id:'#order-screenshot',
+            multiple:false
+        },
 
         accept: {
             title: 'Images',
