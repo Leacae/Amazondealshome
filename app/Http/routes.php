@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+Route::get('/','HomeController@index');
+
 Route::post('activity',"HomeController@activity");
 
 Route::post('upload',"HomeController@upload");

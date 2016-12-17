@@ -152,7 +152,6 @@ $(document).ready(function(){
         },
         messages: {
             email: {
-                required: "What's your email?",
                 email: "Please, enter a valid email"
             },
         },
@@ -181,10 +180,19 @@ $(document).ready(function(){
                 type: 'POST',
                 data: $(this).serialize(),
                 success: function(data) {
-
+                    if(data.state){
+                        $('#modalActivity .modal-title').html('<i class="icon-envelope-letter"></i>Well done!<br>Submit a successful thank you !');
+                        $('#modalActivity').modal('show');
+                        $('#activity_form').find('input').val('');
+                        $('.screenshot .text').text('Order Screenshot');
+                    }else{
+                        $('#modalActivity .modal-title').html('<i class="icon-ban"></i>Oops!<br>'+data.info);
+                        $('#modalActivity').modal('show');
+                    }
                 },
                 error: function() {
-
+                    $('#modalActivity .modal-title').html('<i class="icon-ban"></i>Oops!<br>Please subscribe and we will keep you updated!');
+                    $('#modalActivity').modal('show');
                 }
             });
         }
@@ -207,12 +215,32 @@ $(document).ready(function(){
         }
     });
     uploader.on( 'uploadProgress', function( file, percentage ) {
-
+        $('.screenshot .text').text('Uploading');
     });
-    uploader.on( 'uploadSuccess', function( file ) {
-
+    uploader.on( 'uploadSuccess', function( file,data) {
+        if(data.state){
+            $('.screenshot input[name=order_screenshot]').val(data.path);
+            var name=file.name.split('.'),
+                fileName='';
+            if(name.length>1){
+                if(name[0].length>20){
+                    name[0]=name[0].substring(0,20);
+                }
+                fileName=name[0]+'.'+name[1];
+            }else{
+                fileName='Done';
+            }
+            $('.screenshot .text').text(fileName);
+        }else{
+            $('.screenshot .text').text('Failed');
+        }
     });
     uploader.on( 'uploadError', function( file ) {
+        $('.screenshot .text').text('Failed');
+    });
 
+    $('#enjoin_submit').click(function () {
+        $('#modalActivity .modal-title').html('<i class="icon-ban"></i>Oops!<br>Please subscribe and we will keep you updated!');
+        $('#modalActivity').modal('show');
     });
 });

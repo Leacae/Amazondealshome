@@ -49,7 +49,6 @@ h2,
 h3,
 h4 {
 	color: #222;
-	text-transform: uppercase;
 }
 
 ul {
@@ -959,4 +958,10 @@ footer .logo img { content: url("../images/logo_dark@2x.png"); }
 .webuploader-pick-disable {
 	opacity: 0.6;
 	pointer-events:none;
+}
+.screenshot{
+	text-align: center;
+}
+#intro #enjoin_submit{
+	background: #a09e9e;
 }

@@ -2,16 +2,90 @@
 
 namespace App\Http\Controllers;
 
+use App\Activity;
 use App\Subscribe;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Validator;
 
 class HomeController extends Controller
 {
-
-    public function activity(Request $request){
-        dump($request->all());
+    /**
+     * Appliction Home
+     *
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
+    public function  index(){
+        $checkIp=$this->checkEveryDayIpNumber();
+        return view('index',[
+            'checkIp'=>$checkIp
+        ]);
     }
+
+    /**
+     * Activity
+     *
+     * @param Request $request
+     * @return array
+     */
+    public function activity(Request $request){
+        $validator = Validator::make($request->all(), [
+            'name' => 'required',
+            'email' => 'required|email|unique:activitys,email',
+            'order_id' => 'required|unique:activitys,order_id',
+            'order_date' => 'required',
+            'order_screenshot' => 'required',
+        ]);
+        if ($validator->fails()) {
+            return [
+                'state'=>false,
+                'info' =>$validator->errors()->first()
+            ];
+        }
+        $flag=$this->checkEveryDayIpNumber();
+        if($flag){
+            return [
+                'state'=>false,
+                'info' =>'Please subscribe and we will keep you updated!5000'
+            ];
+        }
+        $activity=Activity::create(array_add($request->all(),'ip',$request->ip()));
+        if($activity){
+            return [
+                'state'=>true
+            ];
+        }else{
+            return [
+                'state'=>false,
+                'info' =>'Please subscribe and we will keep you updated!'
+            ];
+        }
+
+
+    }
+
+    /**
+     * Check Every Day Ip Number
+     *
+     * @param int $number
+     * @return bool
+     */
+    private function checkEveryDayIpNumber($number=500){
+        $count=Activity::whereBetween('created_at',
+            [Carbon::today(),Carbon::tomorrow()])
+            ->count();
+        if($count>=$number){
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Image Upload
+     *
+     * @param Request $request
+     * @return array
+     */
     public function upload(Request $request){
         if ($request->hasFile('file')) {
             $upload=$request->file('file');
@@ -21,7 +95,6 @@ class HomeController extends Controller
                 if($file){
                     return [
                         'state'=>true,
-                        'name'=>$file->getFilename(),
                         'path'=>$file->getPathname()
                     ];
                 }

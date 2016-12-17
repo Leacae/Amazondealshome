@@ -15,8 +15,8 @@ class CreateActivitysTable extends Migration
         Schema::create('activitys', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->string('email');
-            $table->string('order_id');
+            $table->string('email')->unique();
+            $table->string('order_id')->unique();
             $table->string('order_date');
             $table->string('order_screenshot');
             $table->string('ip');

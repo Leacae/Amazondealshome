@@ -76,7 +76,7 @@
                         <br />
                         <a href="http://amzn.to/2gS3Vic" target="_blank" class="buy-now">Buy Now</a>
                         <p class="wow fadeInRight" data-wow-delay="1.2s">
-                            <a href="http://amzn.to/2gS3Vic" target="_blank" class="link-write">Buy AmazonBasics Lightning Cable (6-Feet)</a>, Get $8 Amazon gift card!<br/>
+                            <a href="http://amzn.to/2gS3Vic" target="_blank" class="link-write">Buy AmazonBasics Lightning Cable (6-Feet)</a> Get $8 Amazon gift card!<br/>
                             <br/>
                             *The Lightning cable should be purchased after 2016/12/15, Only for the 6 Feet, White one.<br/>
                             *Limit 500 gift card per day<br/>
@@ -100,15 +100,18 @@
                         <div class="form-group">
                             <input type="text" class="form-control wow flipInX" data-wow-delay="1.4s" data-wow-duration="0.2s" autocomplete="off" name="order_date" placeholder="Order Date">
                         </div>
-                        {{--<div class="form-group">
-                            <input type="file" class="form-control wow flipInX" data-wow-delay="1.4s" data-wow-duration="0.2s" autocomplete="off" name="order_screenshot" placeholder="Order Screenshot" >
-                        </div>--}}
-                        <div class="form-group">
+                        <div class="form-group screenshot">
+                            <input type="hidden" name="order_screenshot" value="">
                             <div class="form-control wow flipInX animated" data-wow-delay="1.4s"  data-wow-duration="0.2s" id="order-screenshot">
-                                <i class="icon-cloud-upload"></i> Order Screenshot
+                                <i class="icon-cloud-upload"></i> <span class="text">Order Screenshot</span>
                             </div>
                         </div>
-                        <button id="activity_submit" type="submit" class="btn btn_start wow flipInX" data-wow-delay="1.6s" data-wow-duration="0.2s">Submit</button>
+                        @if($checkIp)
+                            <button id="enjoin_submit" type="button" class="btn btn_start wow flipInX" data-wow-delay="1.6s" data-wow-duration="0.2s">Submit</button>
+                        @else
+                            <button id="activity_submit" type="submit" class="btn btn_start wow flipInX" data-wow-delay="1.6s" data-wow-duration="0.2s">Submit</button>
+                        @endif
+
                     </form>
                 </div>
             </div>
@@ -175,6 +178,15 @@
 
 <!-- subscribe modal-->
 <div class="modal fade" id="modalSubscribe" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h3 class="modal-title"></h3>
+        </div>
+    </div>
+</div>
+<!--activity model  -->
+<div class="modal fade" id="modalActivity" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
