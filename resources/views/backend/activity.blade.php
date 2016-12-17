@@ -13,6 +13,7 @@
 		<link href="{{url('backend/css/icons.css')}}" rel="stylesheet" type="text/css">
 		<link href="{{url('backend/css/pages.css')}}" rel="stylesheet" type="text/css">
 		<link href="{{url('backend/css/responsive.css')}}" rel="stylesheet" type="text/css">
+		<link href="{{url('backend/css/custombox.min.css')}}" rel="stylesheet" rel="stylesheet" type="text/css">
 		<link href="{{url('backend/css/magnific-popup.css')}}" rel="stylesheet" type="text/css">
 		<!--[if lt IE 9]>
 			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -85,6 +86,17 @@
 												</div>
 											</form>
 										</div>
+										<div class="col-sm-6 col-lg-4">
+											<div class="h5 m-0">
+												<span class="vertical-middle">Sort By:</span>
+												<div class="btn-group vertical-middle" data-toggle="buttons">
+													<label class="btn btn-white btn-md waves-effect active">
+														<input type="radio" autocomplete="off" checked="checked">time</label>
+													<label class="btn btn-white btn-md waves-effect">
+														<input type="radio" autocomplete="off">create</label>
+												</div>
+											</div>
+										</div>
 									</div>
 									<div class="table-responsive">
 										<table class="table table-actions-bar">
@@ -95,6 +107,7 @@
 													<th>Order Id</th>
 													<th>Order Date</th>
 													<th>Order Screenshot</th>
+													<th>Status</th>
 													<th style="min-width: 80px">Action</th>
 												</tr>
 											</thead>
@@ -115,6 +128,18 @@
 															</a>
 														</td>
 														<td>
+															@if ($activity->state == 0)
+																<span class="label label-danger">Received</span>
+															@elseif ($activity->state == 1)
+																<span class="label label-primary">Senting</span>
+															@elseif($activity->state==2)
+																<span class="label label-warning">Not Approved</span>
+															@elseif($activity->state==3)
+																<span class="label label-success">Pending</span>
+															@endif
+														</td>
+														<td>
+															<a href="javascript:void(0);" data-target="{{$activity->id}}" class="update-state table-action-btn"><i class="md md-edit"></i></a>
 															<a href="javascript:void(0);" class="table-action-btn"><i class="md md-close"></i></a>
 														</td>
 													</tr>
@@ -129,6 +154,35 @@
 					</div>
 				</div>
 				<footer class="footer text-right">2015 © Amazondealshome.com.</footer>
+			</div>
+		</div>
+		<div id="custom-modal" class="modal-demo">
+			<button type="button" class="close" onclick="Custombox.close()">
+				<span>&times;</span>
+				<span class="sr-only">Close</span>
+			</button>
+			<h4 class="custom-modal-title">Update State</h4>
+			<div class="custom-modal-text text-left">
+				<form action="{{url('dashboard/update-state')}}" method="post" id="updateStateFrom">
+					{{csrf_field()}}
+					<input type="hidden" name="id" value="">
+					<div class="form-group">
+						<div class="radio radio-inline">
+							<input type="radio" name="state" id="radio1" value="1" checked="checked">
+							<label for="radio1">Sent</label>
+						</div>
+						<div class="radio radio-inline">
+							<input type="radio" name="state" id="radio2" value="2">
+							<label for="radio2">Not Approved</label>
+						</div>
+						<div class="radio radio-inline">
+							<input type="radio" name="state" id="radio3" value="3">
+							<label for="radio3">Pending</label>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-default waves-effect waves-light ">Save</button>
+					<button type="button" onclick="Custombox.close()" class="btn btn-danger waves-effect waves-light m-l-10">Cancel</button>
+				</form>
 			</div>
 		</div>
 		<script>
@@ -147,6 +201,7 @@
 		<script src="{{url('backend/js/jquery.core.js')}}"></script>
 		<script src="{{url('backend/js/jquery.app.js')}}"></script>
 		<script src="{{url('backend/js/custombox.min.js')}}"></script>
+		<script src=" {{url('backend/js/custombox.min.js')}}"></script>
 		<script src="{{url('backend/js/legacy.min.js')}}"></script>
 		<script src="{{url('backend/js/jquery.magnific-popup.min.js')}}"></script>
 	   <script>
@@ -158,8 +213,38 @@
 				   gallery: {
 					   enabled: true,
 					   navigateByImgClick: true,
-					   preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
+					   preload: [0, 1]
 				   }
+			   });
+
+			   $('.update-state').on('click', function( e ) {
+				   var $this=$(this);
+				   Custombox.open({
+					   'target':'#custom-modal',
+					   'complete':function () {
+							$('#custom-modal').find('form input[name=id]').val($this.data('target'));
+					   }
+				   });
+				   e.preventDefault();
+			   });
+			   $('#updateStateFrom').submit(function () {
+				   var action = $(this).attr('action');
+				   $.ajax({
+					   url: action,
+					   type: 'POST',
+					   data: $(this).serialize(),
+					   success: function(data) {
+						   if(data.state){
+								window.location.reload();
+						   }else{
+								console.log(data.info);
+						   }
+					   },
+					   error: function(e){
+						   console.log(e);
+					   }
+				   });
+				   return false;
 			   });
 		   });
 	   </script>

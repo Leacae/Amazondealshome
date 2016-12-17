@@ -22,5 +22,9 @@ Route::post('subscribe',"HomeController@subscribe");
 /*...*/
 
 Route::group(['prefix' => 'dashboard','namespace'=>'Backend'],function (){
+
     Route::match(['get','post'],'/','HomeController@index');
+
+    Route::post('/update-state','HomeController@updateState');
+
 });
