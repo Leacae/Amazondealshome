@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="Coderthemes">
-		<title>Amazondealshome- Admin Dashboard </title>
+		<title>Amazon Deals- Admin Dashboard </title>
 		<link href="{{url('backend/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css">
 		<link href="{{url('backend/css/core.css')}}" rel="stylesheet" type="text/css">
 		<link href="{{url('backend/css/components.css')}}" rel="stylesheet" type="text/css">
@@ -140,7 +140,6 @@
 														</td>
 														<td>
 															<a href="javascript:void(0);" data-target="{{$activity->id}}" class="update-state table-action-btn"><i class="md md-edit"></i></a>
-															<a href="javascript:void(0);" class="table-action-btn"><i class="md md-close"></i></a>
 														</td>
 													</tr>
 												@endforeach

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0915c119-713b-40c3-a43f-6b6b76081b8c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/HomeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/backend/activity.blade.php" afterPath="$PROJECT_DIR$/resources/views/backend/activity.blade.php" />
     </list>
     <ignored path="Amazondealshome.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,19 +24,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="activity.blade.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="activity.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/backend/activity.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="424">
-              <caret line="96" column="54" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
+            <state relative-caret-position="308">
+              <caret line="143" column="57" selection-start-line="143" selection-start-column="57" selection-end-line="143" selection-end-column="57" />
               <folding>
-                <element signature="e#6296#6303#0#HTML" expanded="true" />
+                <element signature="e#6191#6198#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="HomeController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/HomeController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="437">
@@ -95,8 +95,8 @@
         <option value="$PROJECT_DIR$/database/migrations/2016_12_17_085128_add_filed_activitys_table.php" />
         <option value="$PROJECT_DIR$/app/Activity.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/resources/views/backend/activity.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Backend/HomeController.php" />
+        <option value="$PROJECT_DIR$/resources/views/backend/activity.blade.php" />
       </list>
     </option>
   </component>
@@ -247,7 +247,7 @@
       <updated>1481879642167</updated>
       <workItem from="1481879643750" duration="856000" />
       <workItem from="1481880502784" duration="13693000" />
-      <workItem from="1481939545180" duration="24621000" />
+      <workItem from="1481939545180" duration="24738000" />
     </task>
     <task id="LOCAL-00001" summary="Amazondealshome Project">
       <created>1481880553773</created>
@@ -389,11 +389,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481971489931</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Amazondealshome Project">
+      <created>1481971601730</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1481971601730</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39170000" />
+    <option name="totallyTimeSpent" value="39287000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -754,22 +761,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/backend/activity.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="424">
-          <caret line="96" column="54" selection-start-line="96" selection-start-column="54" selection-end-line="96" selection-end-column="54" />
-          <folding>
-            <element signature="e#6296#6303#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Backend/HomeController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="23" column="40" selection-start-line="23" selection-start-column="40" selection-end-line="23" selection-end-column="40" />
           <folding>
             <element signature="e#48#65#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/backend/activity.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="143" column="57" selection-start-line="143" selection-start-column="57" selection-end-line="143" selection-end-column="57" />
+          <folding>
+            <element signature="e#6191#6198#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
