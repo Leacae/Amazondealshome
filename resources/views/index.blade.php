@@ -206,7 +206,7 @@
 <script src="js/jquery.stellar.min.js"></script>
 <script src="js/jquery.superslides.min.js"></script>
 <script src="js/placeholders.jquery.min.js"></script>
-<script src="js/webuploader.min.js"></script>
+<script src="js/webuploader.js"></script>
 <script src="js/custom.js"></script>
 
 <!--[if lte IE 9]>

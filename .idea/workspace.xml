@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0915c119-713b-40c3-a43f-6b6b76081b8c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/webuploader.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/index.blade.php" />
     </list>
@@ -27,8 +28,8 @@
       <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="138" column="121" selection-start-line="138" selection-start-column="121" selection-end-line="138" selection-end-column="121" />
+            <state relative-caret-position="458">
+              <caret line="208" column="41" selection-start-line="208" selection-start-column="41" selection-end-line="208" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -154,28 +155,6 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="errors" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Amazondealshome" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Amazondealshome" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -191,8 +170,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\www\Amazondealshome\public\img" />
       <recent name="D:\www\Amazondealshome\public\js" />
+      <recent name="D:\www\Amazondealshome\public\img" />
       <recent name="D:\www\Amazondealshome\public\css" />
       <recent name="D:\www\Amazondealshome\public" />
     </key>
@@ -257,7 +236,7 @@
       <updated>1481879642167</updated>
       <workItem from="1481879643750" duration="856000" />
       <workItem from="1481880502784" duration="13693000" />
-      <workItem from="1481939545180" duration="5190000" />
+      <workItem from="1481939545180" duration="5993000" />
     </task>
     <task id="LOCAL-00001" summary="Amazondealshome Project">
       <created>1481880553773</created>
@@ -315,11 +294,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481944559026</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Amazondealshome Project">
+      <created>1481944745902</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1481944745902</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19739000" />
+    <option name="totallyTimeSpent" value="20542000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -568,10 +554,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/webuploader.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="138" column="121" selection-start-line="138" selection-start-column="121" selection-end-line="138" selection-end-column="121" />
+        <state relative-caret-position="458">
+          <caret line="208" column="41" selection-start-line="208" selection-start-column="41" selection-end-line="208" selection-end-column="41" />
           <folding />
         </state>
       </provider>
