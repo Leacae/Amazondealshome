@@ -75,7 +75,7 @@
                             Lightning Cable
                         </h3>
                         <br />
-                        <a href="http://amzn.to/2gS3Vic" target="_blank" class="buy-now">Buy Now</a>
+                        <a href="http://amzn.to/2gS3Vic" target="_blank" class="buy-now">GET NOW</a>
                         <p class="wow fadeInRight" data-wow-delay="1.2s">
                             <a href="http://amzn.to/2gS3Vic" target="_blank" class="link-write">Buy AmazonBasics Lightning Cable (6-Feet)</a> <strong>Get $8 Amazon gift card in 24 hours!</strong><br/>
                             <br/>
