@@ -77,7 +77,7 @@
                         <br />
                         <a href="http://amzn.to/2gS3Vic" target="_blank" class="buy-now">Buy Now</a>
                         <p class="wow fadeInRight" data-wow-delay="1.2s">
-                            <a href="http://amzn.to/2gS3Vic" target="_blank" class="link-write">Buy AmazonBasics Lightning Cable (6-Feet)</a> Get $8 Amazon gift card!<br/>
+                            <a href="http://amzn.to/2gS3Vic" target="_blank" class="link-write">Buy AmazonBasics Lightning Cable (6-Feet)</a> <strong>Get $8 Amazon gift card in 24 hours!</strong><br/>
                             <br/>
                             *The Lightning cable should be purchased after 2016/12/15, Only for the 6 Feet, White one.<br/>
                             *Limit 500 gift card per day<br/>
