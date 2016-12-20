@@ -181,7 +181,7 @@ $(document).ready(function(){
                 data: $(this).serialize(),
                 success: function(data) {
                     if(data.state){
-                        $('#modalActivity .modal-title').html('<i class="icon-envelope-letter"></i>Well done!<br>Submit a successful thank you !');
+                        $('#modalActivity .modal-title').html('<i class="icon-envelope-letter"></i>Well done!<br>The Gift Card Will Be Sent in 24 Hours Once Approved!');
                         $('#modalActivity').modal('show');
                         $('#activity_form').find('input').val('');
                         $('.screenshot .text').text('Order Screenshot');
@@ -191,7 +191,7 @@ $(document).ready(function(){
                     }
                 },
                 error: function() {
-                    $('#modalActivity .modal-title').html('<i class="icon-ban"></i>Oops!<br>Please subscribe and we will keep you updated!');
+                    $('#modalActivity .modal-title').html('<i class="icon-ban"></i>Oops!<br> Please subscribe and we will keep you updated!');
                     $('#modalActivity').modal('show');
                 }
             });

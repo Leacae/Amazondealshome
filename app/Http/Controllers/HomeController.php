@@ -42,11 +42,18 @@ class HomeController extends Controller
                 'info' =>$validator->errors()->first()
             ];
         }
+        $ipExites=$this->checkIPexists();
+        if($ipExites){
+            return [
+                'state'=>false,
+                'info' =>'We Already Received Your Order, The Gift Card Will Be Sent in 24 Hours Once Approved!'
+            ];
+        }
         $flag=$this->checkEveryDayIpNumber();
         if($flag){
             return [
                 'state'=>false,
-                'info' =>'Please subscribe and we will keep you updated!5000'
+                'info' =>'Oops! Please subscribe and we will keep you updated!'
             ];
         }
         $activity=Activity::create(array_add($request->all(),'ip',$request->ip()));
@@ -57,11 +64,23 @@ class HomeController extends Controller
         }else{
             return [
                 'state'=>false,
-                'info' =>'Please subscribe and we will keep you updated!'
+                'info' =>'Oops! Please subscribe and we will keep you updated!'
             ];
         }
 
 
+    }
+
+    /**
+     * Check IP IF Exites
+     *
+     * @return bool
+     */
+    private  function checkIPexists(){
+
+        $count=Activity::where('ip',request()->ip())->count();
+
+        return $count?true:false;
     }
 
     /**

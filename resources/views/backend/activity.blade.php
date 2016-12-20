@@ -38,6 +38,14 @@
 								<li class="hidden-xs">
 									<a href="javascript:void(0);" id="btn-fullscreen" class="waves-effect waves-light"><i class="icon-size-fullscreen"></i></a>
 								</li>
+								<li class="dropdown">
+									<a href="" class="dropdown-toggle profile" data-toggle="dropdown" aria-expanded="false">
+										<img src="{{url('img/avatar-1.jpg')}}" alt="user-img" class="img-circle">
+									</a>
+									<ul class="dropdown-menu">
+										<li><a href="{{url('dashboard/logout')}}"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+									</ul>
+								</li>
 							</ul>
 						</div>
 					</div>
